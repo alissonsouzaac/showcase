@@ -1,0 +1,58 @@
+.container {
+  padding: 0 2rem;
+  display: flex,
+  
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardProduct {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 0.5px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px #f6f6f6;
+  display: table;
+  flex-direction: column;
+}
+
+.productContainer {
+  display: flex;
+}
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.image {
+  display: block;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.icon {
+  position: absolute;
+  bottom: 20px;
+  left: 450px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
