@@ -49,20 +49,17 @@ export default function Home({ products }: ProductsProps) {
                     loading="lazy"
                     width={200}
                     height={200}
-                    className={styles.image}
                 />
                 {prod.favorite 
                     ? 
                     <MdFavorite
                         className={styles.icon}
-                       // size={30}
                         color="error"
                         onClick={() => handleFavoriteProduct(prod.id)}
                     /> 
                     : 
                     <MdFavoriteBorder
                         className={styles.icon}  
-                        //size={30}
                         onClick={() => handleFavoriteProduct(prod.id)}
                     />
                 }
@@ -85,16 +82,16 @@ export const getStaticProps: GetStaticProps = () => {
       id: 1,
       name: "TShirt Colors",
       imageUrl: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80",
-      listPrice: "99.90",
-      salePrice: "59.90",
+      listPrice: "200.90",
+      salePrice: "99.90",
       favorite: true
     },
     {
       id: 2,
       name: "Jacket",
       imageUrl: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80",
-      listPrice: "399.90",
-      salePrice: "199.90",
+      listPrice: "499.90",
+      salePrice: "299.90",
       favorite: false
     },
     {
